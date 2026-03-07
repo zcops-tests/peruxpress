@@ -1,0 +1,21 @@
+{
+  "name": "PerúXpress Inmobiliaria",
+  "short_name": "PerúXpress",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0F1115",
+  "theme_color": "#0A0C10",
+  "description": "Auditoría y Venta de Inmuebles en Surco - Lima",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
