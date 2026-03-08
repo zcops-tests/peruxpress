@@ -103,18 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Desktop
         navLinks.forEach(link => {
             if (link.dataset.section === id) {
-                link.className = "nav-link text-sm transition-all cursor-pointer text-white font-bold border-b-2 border-[#2E90FA] pb-1";
+                link.classList.add('active');
             } else {
-                link.className = "nav-link text-sm transition-all cursor-pointer text-[#94A3B8] hover:text-white font-medium";
+                link.classList.remove('active');
             }
         });
         
         // Mobile
         mobileNavLinks.forEach(link => {
-             if (link.dataset.section === id) {
-                link.className = "mobile-nav-link block px-3 py-2 text-base rounded-md cursor-pointer transition-colors font-bold text-white bg-white/10 border-l-4 border-[#2E90FA]";
+            if (link.dataset.section === id) {
+                link.classList.add('active');
             } else {
-                link.className = "mobile-nav-link block px-3 py-2 text-base rounded-md cursor-pointer transition-colors font-medium text-[#94A3B8] hover:text-white hover:bg-white/5";
+                link.classList.remove('active');
             }
         });
     }
